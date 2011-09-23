@@ -4,7 +4,6 @@ gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
 gem 'sqlite3'
 
 
@@ -17,15 +16,25 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'rake', '0.8.7'
 
-# Use unicorn as the web server
-# gem 'unicorn'
+group :production do
+  gem 'pg'
+  gem 'therubyracer-heroku'
+end
 
-# Deploy with Capistrano
-# gem 'capistrano'
+group :development do
+  # To use debugger
+  # gem 'ruby-debug19', :require => 'ruby-debug'
+ 
+  # Use unicorn as the web server
+  gem 'unicorn'
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+  # Deploy with Capistrano
+  # gem 'capistrano'
+
+  gem 'sqlite3'
+end
 
 group :test do
   # Pretty printed test output
