@@ -4,7 +4,6 @@ gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -17,6 +16,8 @@ end
 
 gem 'jquery-rails'
 gem 'rake', '0.8.7'
+gem 'sqlite3'
+gem 'haml'
 
 group :production do
   gem 'pg'
