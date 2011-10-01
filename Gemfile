@@ -18,6 +18,7 @@ gem 'jquery-rails'
 gem 'rake', '0.8.7'
 gem 'sqlite3'
 gem 'haml'
+gem 'jpmobile'
 
 group :production do
   gem 'pg'
